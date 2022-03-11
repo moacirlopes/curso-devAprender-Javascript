@@ -104,6 +104,7 @@ console.log(resultado)
 
 //Operadores Aritimetricos(matematicos)
 //Operadores Atribuição
+//Operadores de Igualdade
 //Operados de comparação
 //Operadores Logicos
 //Operadores Bitwise
@@ -127,3 +128,110 @@ console.log(idade)
 
 console.log(idade--)
 console.log(idade)
+
+//Operadores de Atribuição
+
+let valorTeclado = 100
+valorTeclado *= valorTeclado
+console.log(valorTeclado)
+
+//Operadores de igualdade
+//Igualdade escrita
+// === compara valor e tipo
+
+console.log(1 === 1)
+console.log('1' === 1)
+
+//Igualdade solta
+// == compara apenas o valor
+
+console.log(1 == 1)
+console.log('1' == 1)
+
+//Operador Ternario
+//Ter mais de 100 pontos premium, comum
+let pontos = 100
+let tipo = pontos > 100 ? 'premium' : 'commun'
+console.log(tipo)
+
+//Operadores Lógicos
+//e (&&)
+//Retorna true caso os dois operando forem true
+
+console.log(true && true)
+console.log(true && false)
+
+// let maiorDeIdade = true
+// let possuircarteira = true
+// let podeAplica = maiorDeIdade && possuircarteira
+
+// console.log(podeAplica)
+
+//or ||
+//Retorna true se um dos operando forem true
+let maiorDeIdade = false
+let possuircarteira = false
+let podeAplica = maiorDeIdade || possuircarteira
+
+console.log('João pode aplicar?', podeAplica)
+
+//not (!)
+//negação
+//negar
+
+let candidatoRecusado = !podeAplica
+console.log('João é um candidato recusado?', candidatoRecusado)
+
+//Comparação logica com valores não booleanos
+
+//valores falsy
+//undefined
+//null
+//0
+//false
+//'' string vazia (espaço conta,como se tivesse uma letra ali)
+//NaN - not a number
+
+//valores Truthy
+//true
+//qualquer numero difente de 0
+// 'string com palavra'
+
+console.log(true || 1)
+
+//if..Else
+
+//Se a hora estiver entre as 6 horas até 12 : Bom dia
+//Se a hora estiver entre 12:00 até 18:00 : Boa tarde
+//Caso contrário : Boa noite
+
+let hora = 13
+
+if (hora >= 6 && hora <= 12) {
+  console.log('Bom dia')
+} else if (hora > 12 && hora <= 18) {
+  console.log('Boa Tarde')
+} else {
+  console.log('Boa Noite')
+}
+
+//Switch Case
+let permissao = 'diretor' // commun , gerente ,diretor
+
+switch (permissao) {
+  case 'commun':
+    console.log('Usuario commun')
+    break
+
+  case 'gerente':
+    console.log('Usuario gerente')
+    break
+
+  case 'diretor':
+    console.log('Usuario diretor')
+    break
+
+  default:
+    console.log('Não há permissão')
+    break
+}
