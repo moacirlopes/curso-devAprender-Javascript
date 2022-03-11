@@ -235,3 +235,62 @@ switch (permissao) {
     console.log('Não há permissão')
     break
 }
+
+//1.For
+//2.While
+//3.Do...While
+//4.For..In
+//5.For..of
+
+//1.For
+// for (let i = 0; i < 100; i++) {
+//   if (i % 2 !== 0) {
+//     console.log(i)
+//   }
+// }
+
+//2.While loop
+//declarar variavel de indice fora do loop
+
+let i = 5
+
+while (i >= 1) {
+  if (i % 2 !== 0) {
+    console.log(i)
+  }
+  i--
+}
+
+//3.Do...While
+//ele executa uma vez
+//e depois verifica
+//no minino ele roda uma vez
+
+do {
+  console.log('digitando')
+  i++
+} while (i < 10)
+
+//4.For..In
+
+const pessoa = {
+  nome: 'jose',
+  idade: 21
+}
+
+//key-valeu
+for (let chave in pessoa) {
+  console.log(chave, pessoa.nome)
+}
+
+const cores = ['vermelho', 'azul', 'verde']
+for (let indice in cores) {
+  console.log(indice, cores[indice])
+}
+
+//for-of
+//interação com arrays
+
+for (let cor of cores) {
+  console.log(cor)
+}
